@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Web Developer</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js">
+    </script>
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo">Portfolio</a>
+        <a href="#" class="logo">Syam Sankar</a>
         <nav class="navbar">
             <a href="#home" style="--i:1" class="active">Home</a>
             <a href="#about" style="--i:2">About</a>
             <a href="#services" style="--i:3">Skills</a>
-            <a href="#skills" style="--i:4">Portfolio</a>
+            <a href="#skills" style="--i:4">Projects</a>
             <a href="#contact" style="--i:5">Contact</a>
         </nav>
     </header>
@@ -24,17 +27,19 @@
             <h3>Hello, It's Me</h3>
             <h2>Syam Sankar Pinnamareddy</h2>
             <h3>And I'm a <span class="text"></span></h3>
-            <p>I'm a Front-End Web Developer. <br/>
+            <p>
                 Pursuing a challenging role as a Software Engineer in a reputable organization to enhance my
                 skills,acquire new knowledge, and leverage my expertise for significant contributions towards the company success.
             </p>
             <div id="home-scl">
+                
+                <a href="https://www.linkedin.com/in/syam-sankar-pinnamareddy-055a02229" style="--i:10"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://github.com/21A91A1262" style="--i:8"><i class='bx bxl-github' ></i></a>
                 <a href="#" style="--i:7"><i class='bx bxl-facebook'></i></a>
-                <a href="#" style="--i:8"><i class='bx bxl-github' ></i></a>
-                <a href="#" style="--i:9"><i class='bx bxl-whatsapp' ></i></a>
-                <a href="#" style="--i:10"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://wa.me/<+91><7794020164>" style="--i:9"><i class='bx bxl-whatsapp' ></i></a>
+                
             </div>
-            <a href="#" class="btn-box">More About Me</a>
+            <a href="Syam_oct_accenture_I.pdf" download class="btn-box">More About Me</a>
             <span class="home-imgHover"></span>
         </div>
         <div class="hm1">
@@ -46,7 +51,7 @@
             <img src="./images/syam_image.jpeg" alt="">
         </div>
         <div class="about-text">
-            <h2>About <span>Me</span></h2>
+            <h1>About <span>Me</span></h1>
             <h4>Full Stack Developer!</h4>
             <p>
                 I'm Syam Sankar, hailing from rajahmundry,AP. I hold a degree in Information Technology from Aditya Engineering College, where I achieved a CGPA of 8.56 through dedication and hard work. In addition to my formal education, I have completed AWS Cloud Practitioner course, further enhancing my technical skill set.
@@ -60,7 +65,7 @@ Looking ahead, I am eager to broaden my experience across diverse industries, co
                 created in me an interest in lifelong learning.
                 I'm attentive listener and effective oral communication skill -->
             </p>
-            <a href="#" class="btn-box">More About Me</a>
+            <a href="Syam_oct_accenture_I.pdf" download class="btn-box">More About Me</a>
         </div>
     </section>
 
@@ -190,46 +195,41 @@ Looking ahead, I am eager to broaden my experience across diverse industries, co
     <section>
         <div class="portfolio" id="project">
             <div class="main-text" id="project">
-                <h2>Latest <span>Project</span></h2>
+                <h2>Latest <span>Projects</span></h2>
                 
                 <div class="portfolio-content">
                     <div class="row">
-                        <img src="./images/Project1.png">
+                        <img src="./images/project1.png">
                         <div class="layer">
-                            <h5>Weather App</h5>
-                            <p>The Weather Detection project is designed to 
-                               provide real-time weather information based 
-                               on user inputs such as location or city name.
-                               It utilizes APIs (Application Programming Interfaces)
-                               provided by weather services to fetch and display 
-                               current weather conditions and forecasts.
+                            <h5>E-Learning App</h5>
+                            <p>Skillhacker is an e-learning platform focused on delivering online courses, developed using WordPress. 
+                                It provides an intuitive user interface for students to access diverse learning materials. 
+                                The platform integrates advanced plugins to enhance course management and user experience.
+                                 It aims to deliver flexible and interactive learning solutions
                             </p>
                             <a href="#"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
                         </div>
                     </div>
 
                     <div class="row">
-                        <img src="./images/Project2.png">
+                        <img src="./images/Project_2.png">
                         <div class="layer">
-                            <h5>To-Do List</h5>
-                            <p>The To-Do List project is a web application designed
-                               to help users organize and manage their tasks effectively.
-                               This project utilizes HTML, CSS, and JavaScript to create
-                               an interactive user interface for adding, editing, and 
-                               deleting tasks.
+                            <h5>AWS Deployment</h5>
+                            <p>The application was deployed in AWS utilizing CloudFront for content delivery, S3 for scalable storage, and EC2 for dynamic computing power.
+                                 This architecture ensures high availability, low-latency content distribution, and secure data storage.
+                                 The integration of these services allows for a robust and efficient cloud-based solution
                             </p>
                             <a href="#"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
                         </div>
                     </div>
                     <div class="row">
-                        <img src="./images/Project3.png">
+                        <img src="./images/Project_3.png">
                         <div class="layer">
-                            <h5>Quiz App</h5>
-                            <p>The Quiz App project is a web application designed to provide 
-                               users with an interactive quiz experience. This project utilizes 
-                               HTML, CSS, and JavaScript to create a dynamic user interface
-                               for presenting questions, handling user responses, and 
-                               calculating scores.
+                            <h5>Login Page App</h5>
+                            <p>The interactive login page designed for the website offers a user-friendly experience with real-time validation for input fields. 
+                                It includes secure password encryption and supports multi-factor authentication for enhanced security. 
+                                Users can seamlessly log in using social media accounts or via email.
+                                 The page also features a responsive design for optimal performance across all devices
                             </p>
                             <a href="#"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
                         </div>
@@ -250,10 +250,10 @@ Looking ahead, I am eager to broaden my experience across diverse industries, co
                 <li><i class='bx bx-phone'></i>7794020164</li>
             </div>
             <div class="contact-icons">
-                <a href=""><i class='bx bxl-facebook-circle'></i></a>
+                <a href="https://www.linkedin.com/in/syam-sankar-pinnamareddy-055a02229"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://www.facebook.com/login/"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="https://github.com/21A91A1262"><i class='bx bxl-github'></i></a>
                 <a href=""><i class='bx bxl-twitter'></i></a>
-                <a href=""><i class='bx bxl-github'></i></a>
-                <a href=""><i class='bx bxl-linkedin'></i></a>
             </div>
         </div>
 
