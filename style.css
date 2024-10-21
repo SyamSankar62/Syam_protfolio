@@ -176,7 +176,7 @@ body{
 .about-text{
     margin-right: 30px;
 }
-.about-text h2 span{
+.about-text h1 span{
     color: #0ef;
     margin: 0 auto;
 }
@@ -375,7 +375,7 @@ section{
     content: "65%";
 }
 .progress-line.react span::after{
-    content: "50%";
+    content: "40%";
 }
 .progress-line span::before{
     content: "";
@@ -504,7 +504,7 @@ section{
 }
 .portfolio-content{
     display: flex;
-     /* justify-content: center;
+  /*    justify-content: center;
     align-items: center;
     flex-wrap: wrap;  */
     grid-template-columns: repeat(auto-fit, minmax(359px,auto));
@@ -520,6 +520,7 @@ section{
     align-items: center;
 }
 .row img{
+    height: 100%;
     width: 100%;
     border-radius: 8px;
     display: flex;
