@@ -348,7 +348,7 @@ section{
     width: 65%;
 }
 .progress-line.react span{
-    width: 50%;
+    width: 40%;
 }
 .progress-line span::after{
     position: absolute;
