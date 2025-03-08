@@ -1,1 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developer</title>
+    <link rel="stylesheet" href="CSSCOPY.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js">
+    </script>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <ul class="navbar">
+                <li onclick="hidenavbar1()">
+                    <a href="#" class="close-menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <ul class="main-menu">
+                <li><a href="#" class="logo">Syam Sankar</a></li>
+                <li class="hideOnMobile"><a href="#home">Home</a></li>
+                <li class="hideOnMobile"><a href="#about">About</a></li>
+                <li class="hideOnMobile"><a href="#services">Skills</a></li>
+                <li class="hideOnMobile"><a href="#projects">Projects</a></li>
+                <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+                <li class="menu" onclick="shownavbar1()">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="home" id="home">
+        <div class="home-content">
+            <div class="text-content">
+                <div class="text-content1">
+                <div class="merge-text">
+                    <h3>Hello, It's Me</h3>
+                    <h2>Syam Sankar Pinnamareddy</h2>
+                </div>
+                </div>
+                <h3>And I'm a <span class="text"></span></h3>
+                <p>
+                    Pursuing a challenging role as a Software Engineer in a reputable organization to enhance my
+                    skills, acquire new knowledge, and leverage my expertise for significant contributions towards the company's success.
+                </p>
+                <div id="home-scl">
+                    <a href="https://www.linkedin.com/in/syam-sankar-pinnamareddy-055a02229" style="--i:10"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/21A91A1262" style="--i:8"><i class='bx bxl-github'></i></a>
+                    <a href="#" style="--i:7"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://wa.me/917794020164" style="--i:9"><i class='bx bxl-whatsapp'></i></a>
+                 
+                </div>
+                <a href="Syam_oct_accenture_I.pdf" download class="btn-box">More About Me</a>
+                <span class="home-imgHover"></span>
+            </div>
+            <div class="hm1">
+                <img src="./images/syam_image.jpeg" alt="Syam Sankar Pinnamareddy">
+            </div>
+        </div>
+    </section>
+      
+    </section>
+    <section class="about" id="about">
+        <div class="about-img1">
+            <img src="./images/syam_image.jpeg" alt="">
+        </div>
+        <div class="about-text">
+            <h1>About <span>Me</span></h1>
+            <h4 class="fsd">Full Stack Developer!</h4>
+            <p>
+                I'm Syam Sankar, hailing from rajahmundry,AP. I hold a degree in Information Technology from Aditya Engineering College, where I achieved a CGPA of 8.56 through dedication and hard work. In addition to my formal education, I have completed AWS Cloud Practitioner course, further enhancing my technical skill set.
 
+Although I don't have formal work experience, I've immersed myself in the software field through extensive exposure and hands-on projects. My ambition is to forge a successful career as a Frontend Developer, where I can bring my skills to life and contribute to innovative projects.
+
+Looking ahead, I am eager to broaden my experience across diverse industries, continually learning and growing in my profession. I pride myself on being a quick learner and a collaborative team player, always ready to tackle new challenges. Thank you for taking the time to learn about me
+                <!-- My first exposure to professional life through internship has benefited me mostly in
+                strengthening my personal skills. I have developed a positive attitude and a strong
+                sense of responsibility being innovative , resourceful, open and responsive to change. It has
+                created in me an interest in lifelong learning.
+                I'm attentive listener and effective oral communication skill -->
+            </p>
+            <a href="Syam_oct_accenture_I.pdf" download class="btn-box">More About Me</a>
+        </div>
+    </section>
+
+    <section>
+        <div class="services" id="services">
+            <div class="container">
+                <h1 class="sub-title">My <span>Skiils</span></h1>
+                <div class="services-list">
+                    <div>
+                        <i class='bx bx-code-alt ' style='color:#00eeff'></i>
+                        <h2>Front-End Developer</h2>
+                        <p>As a Frontend Developer, I specialize in crafting responsive and visually appealing user interfaces. My expertise ensures seamless and engaging experiences for all users
+                        </p>
+                        <a href="#" class="read">Learn More</a>
+                    </div>
+                    <div>
+                        <i class='bx bxl-java' style='color:#00eeff'></i>
+                        <h2>Python</h2>
+                        <p>With my expertise in Python for problem solving, I can efficiently tackle complex challenges and develop innovative solutions.</p>
+                        <a href="#" class="read">Learn More</a>
+                    </div>
+                    <div>
+                        <i class='bx bxl-react' style='color:#00eeff'></i>
+                        <h2>React</h2>
+                        <p>Proficient in React, I specialize in crafting dynamic and responsive user interfaces, dedicated to creating seamless and engaging web experiences.
+                        </p>
+                        <a href="#" class="read">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <h2 class="sub-title">My<span> Expertise</span></h2>
+
+    <section class="s">
+        <div class="container1" id="skills">
+            
+            <h1 class="heading1">Technical Skills</h1>
+            <div class="Technical-bars">
+                <div class="bar"><i style="color: #c95d2e" class='bx bxl-html5'></i>
+                    <div class="info">
+                        <span>HTML</span>
+                    </div>
+                    <div class="progress-line html">
+                        <span></span>
+                    </div>
+                </div><br/>
+                <div class="bar"><i style="color: #147bbc" class='bx bxl-css3'></i>
+                    <div class="info">
+                        <span>CSS</span>
+                    </div>
+                    <div class="progress-line css">
+                        <span></span>
+                    </div>
+                </div><br/>
+                <div class="bar"><i style="color: #b0bc1e" class='bx bxl-javascript'></i>
+                    <div class="info">
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="progress-line javaScript">
+                        <span></span>
+                    </div>
+                </div><br/>
+                <div class="bar"><i style="color: #c32ec9" class='bx bxl-java'></i>
+                    <div class="info">
+                        <span>python</span>
+                    </div>
+                    <div class="progress-line java">
+                        <span></span>
+                    </div>
+                </div><br/>
+                <div class="bar"><i style="color: #69bcbc" class='bx bxl-react'></i>
+                    <div class="info">
+                        <span>React</span>
+                    </div>
+                    <div class="progress-line react">
+                        <span> </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container1">
+            <h1 class="heading1">Professional Skills</h1>
+            <div class="radial-bars">
+
+             <div class="radial-bar">
+                <svg x="0px" y="0px" viewBox="0 0 200 200">
+                    <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                    <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                </svg>
+                <div class="percentage">90%</div>
+                <div class="text">Creativity</div>
+             </div>
+
+             <div class="radial-bar">
+                <svg x="0px" y="0px" viewBox="0 0 200 200">
+                    <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                    <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+                </svg>
+                <div class="percentage">80%</div>
+                <div class="text">Communication</div>
+             </div>
+
+             <div class="radial-bar">
+                <svg x="0px" y="0px" viewBox="0 0 200 200">
+                    <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                    <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+                </svg>
+                <div class="percentage">75%</div>
+                <div class="text">Problem Solving</div>
+             </div>
+
+             <div class="radial-bar">
+                <svg x="0px" y="0px" viewBox="0 0 200 200">
+                    <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                    <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+                </svg>
+                <div class="percentage">85%</div>
+                <div class="text">TeamWork</div>
+             </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="portfolio" id="project">
+            <div class="main-text" id="project">
+                <h2>Latest <span>Projects</span></h2>
+                
+                <div class="portfolio-content">
+                    <div class="row">
+                        <img src="./images/project1.jpeg">
+                        <div class="layer">
+                            <h5>E-Learning App</h5>
+                            <p>Skillhacker is an e-learning platform focused on delivering online courses, developed using WordPress. 
+                                It provides an intuitive user interface for students to access diverse learning materials. 
+                                The platform integrates advanced plugins to enhance course management and user experience.
+                                 It aims to deliver flexible and interactive learning solutions
+                            </p>
+                            <a href="#"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <img src="./images/Project_2.png">
+                        <div class="layer">
+                            <h5>AWS Deployment</h5>
+                            <p>The application was deployed in AWS utilizing CloudFront for content delivery, S3 for scalable storage, and EC2 for dynamic computing power.
+                                 This architecture ensures high availability, low-latency content distribution, and secure data storage.
+                                 The integration of these services allows for a robust and efficient cloud-based solution
+                            </p>
+                            <a href="#"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img src="./images/Project_3.png">
+                        <div class="layer">
+                            <h5>Login Page App</h5>
+                            <p>The interactive login page designed for the website offers a user-friendly experience with real-time validation for input fields. 
+                                It includes secure password encryption and supports multi-factor authentication for enhanced security. 
+                                Users can seamlessly log in using social media accounts or via email.
+                                 The page also features a responsive design for optimal performance across all devices
+                            </p>
+                            <a href="#"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-text">
+            <h2>Get In <span>Touch</span></h2>
+            <h4>Let's Work Together</h4>
+            <p>Together, we can turn ideas into reality. Let's collaborate and create something extraordinary!
+            </p>
+            <div class="contact-list">
+                <li><i class='bx bxs-send'></i>syamshankar800@gmail.com</li>
+                <li><i class='bx bx-phone'></i>7794020164</li>
+            </div>
+            <div class="contact-icons">
+                <a href="https://www.linkedin.com/in/syam-sankar-pinnamareddy-055a02229"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://www.facebook.com/login/"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="https://github.com/21A91A1262"><i class='bx bxl-github'></i></a>
+                <a href=""><i class='bx bxl-twitter'></i></a>
+            </div>
+        </div>
+            <div class="contact-form">
+                <form action="">
+                    <input type="text" placeholder="Enter Your Name" required>
+                    <input type="email" placeholder="Enter Your Email" required>
+    
+                    <input type="" placeholder="Enter Your Subject">
+    
+                    <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
+    
+                    <input type="submit" value="submit" class="send">
+                </form>
+            </div>
+        </div>
+
+        <!-- <div class="contact-form">
+            <form action="">
+                <input type="text" placeholder="Enter Your Name" required>
+                <input type="email" placeholder="Enter Your Email" required>
+
+                <input type="" placeholder="Enter Your Subject">
+
+                <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
+
+                <input type="submit" value="submit" class="send">
+            </form>
+        </div> -->
+
+    </section>
+    <div class="last-text">
+        <p>Developed By Syam....</p>
+    </div>
+    <a href="#" class="top"><i class='bx bx-up-arrow-alt'></i></a>
+    <script>
+     
+        function shownavbar1(){
+    const navbar=document.querySelector('.navbar')
+    navbar.style.display ='flex'
+}
+function hidenavbar1(){
+    const navbar=document.querySelector('.navbar')
+    navbar.style.display ='none'
+}
+    </script>
+    
+    <script src="j1.js"></script>
+
+</body>
+</html> 
