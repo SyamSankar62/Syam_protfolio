@@ -9,20 +9,20 @@ body{
     color: #ededed;
     background: #081b29;
 }
-.header{
+/* .header{
     position: relative;
     top: 0;
     left: 0;
     width: 100%;
     padding: 20px 10px;
     background: #051129;
-    /* background: #008080; */
+    /* background: #008080; 
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
     padding-right: 75px;
-}
+} */
 .logo{
     position: relative;
     font-size: 25px;
@@ -35,7 +35,70 @@ body{
     opacity: 0;
     animation: slideRight 1s ease forwards;
 }
+.header  nav{
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.4);
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 50px;
+
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+
+}
+nav a:hover{
+    color:#0ef;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.navbar{
+    display: none;
+    position: fixed;
+    top:0;
+    right:0;
+    height: 100vh;
+    width:250px;
+    z-index:999;
+    background-color:#081b29;;
+    backdrop-filter: blur(100px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.navbar.active {
+    display: flex;
+}
+.navbar li{
+    width:100%;
+
+}
 .navbar a{
+    width:100%;
+
+}
+.menu{
+    display:none;
+}
+.menu{
+    display:block;
+}
+
+/* .navbar li a {
+    list-style: none;
     display: inline-block;
     font-size: 25px;
     color: #fff;
@@ -47,72 +110,99 @@ body{
     animation: slideTop .5s ease forwards;
     animation-delay: calc(.2s * var(--i));
 }
+.sidebar1 {
+    position: fixed;
+    top: 0; 
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar a{
+    width: 100%;
+  }
+  .sidebar a{
+    width: 100%;
+  }
 .navbar a:hover{
     color: #0ef;
-}
+} */
 .home {
+    padding-top: 2rem;
     display: flex;
+    flex: 1;
     flex-direction: column;
     margin: 0 auto;
     max-height: 600px;
+
 }
+
 .home-content {
-    max-width: 585px;
-    margin-left: 50px;
-    margin-top: 6rem;
-    margin-right: 5rem;
+    display: flex;  /* Enables Flexbox */
+    align-items: center; /* Vertically center text and image */
+    justify-content: space-between; /* Distribute space between elements */
+    flex-wrap: nowwrap; /* Prevent wrapping */
+     max-width:90%;
+ 
+    margin: 2rem auto; /* Center the content */
 }
+.text-content {
+    max-width: 50%;
+}
+
 .hm1 {
-    position: relative;
     display: flex;
     justify-content: center;
-    /* align-items: flex-start; */ /* Aligns items at the start of the container vertically */
-    flex-direction: column; /* Arrange items in a column */
-    margin-top: 40px; /* Adjust the margin to position the image below the header */
+    align-items: center; /* Center the image vertically */
+    margin-left: 20px; /* Space between text and image */
 }
-.hm1 img{
-    display: flex;
+
+.hm1 img {
     width: 400px;
     height: 400px;
-    margin-top: 3.5rem;
     border-radius: 50px;
     box-shadow: 0 0 100px #0ef;
 }
-.home-content h2{
+
+.home-content h2 {
     font-size: 2rem;
     margin-bottom: 10px;
 }
-.home-content h3{
+
+.home-content h3 {
     font-size: 32px;
     font-weight: 700;
     opacity: 0;
     animation: slideBottom 1s ease forwards;
     animation-delay: .7s;
 }
-.home-content h3:nth-last-of-type(2){
+
+.home-content h3:nth-last-of-type(2) {
     margin-bottom: 10px;
     animation: slideTop 1s ease forwards;
     animation-delay: .7s;
 }
-.home-content h3 span{
-    color:#0ef;
+
+.home-content h3 span {
+    color: #0ef;
 }
-.home-content h1{
-    font-size: 56px;
-    font-weight: 700;
-    margin: -3px 0;
-    opacity: 0;
-    animation: slideRight 1s ease forwards;
-    animation-delay: 1s;
-}
-.home-content p{
+
+.home-content p {
     font-size: 20px;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
     animation-delay: 1s;
     margin-top: 10px;
 }
-#home-scl a{
+
+#home-scl a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -129,13 +219,7 @@ body{
     animation: slideLeft 1s ease forwards;
     animation-delay: calc(.2s * var(--i));
     margin: 30px 15px 30px 0;
-    box-shadow: 0 0 5px #0ef,
-    0 0 25px #0ef;
-}
-#home-sci a:hover{
-    background: #0ef;
-    color: #081b29;
-    box-shadow: 0 0 20px #0ef;
+    box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
 }
 .btn-box{
     display: inline-block;
@@ -158,22 +242,33 @@ body{
     0 0 25px cyan, 0 0 50px cyan,
     0 0 100px cyan, 0 0 200px cyan,;
 }
-.about{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    row-gap: 0;
-    column-gap: 0;
-    margin-top: 4rem;
-    margin-bottom: 0;
+.about {
+    display: flex;
+    flex: 1; /* Missing semicolon fixed */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Aligns items vertically */
+    flex-wrap: nowrap; /* Ensures items don't wrap to the next line */
+/* Ensure it doesn't take full width */
+    margin: 0 auto; /* Centers the section horizontally */
+    padding-top: 2.5rem; /* Adds spacing at the top */
 }
+
 .about-img1 img{
+ 
     max-width: 450px;
     border-radius: 360px;
     margin-left:50px ;
     box-shadow: 0 0 100px #0ef;
 }
+
 .about-text{
+    text-align: justify;
+    text-justify: inter-word;
+    word-spacing: normal; /* Ensures proper word spacing */
+    letter-spacing: 0.3px; /* Adjust letter spacing */
+    line-height: 1.5; /* Improves readability */
+    hyphens: auto; /* Breaks long words to avoid gaps */
+    max-width: 100%; /* Ensures proper alignment */
     margin-right: 30px;
 }
 .about-text h1 span{
@@ -193,6 +288,10 @@ body{
     line-height: 1.4;
     margin-bottom: 3rem;
 }
+.about-text .fsd{
+   text-align: left;
+   color:#0ef;
+}
 
 #services{
     color: aliceblue;
@@ -202,9 +301,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 100px;
+
 }
 .sub-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     font-size: 60px;
     padding-bottom: 30px;
@@ -212,14 +314,17 @@ body{
 .sub-title span{
     color: #0ef;
 }
-.container{
-    padding: 90px;
+.container {
+    padding: clamp(20px, 10vw, 100px);
 }
 .services-list{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
     grid-gap: 40px;
     margin-top: 50px;
+    text-align: justify;
+    hyphens: auto;
+    word-spacing: 2px;
 }
 .services-list div{
     background-color: transparent;
@@ -273,15 +378,18 @@ body{
 .services-list div:hover{
     transform: translateY(-10px);
 }
-section{
+.s {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    gap: 20px; /* Adds spacing between items */ 
 }
 .container1{
     width: 600px;
     height: 500px;
     padding: 75px 90px;
-    margin-left: 120px;
+
 }
 .heading1{
     text-align: center;
@@ -348,7 +456,7 @@ section{
     width: 65%;
 }
 .progress-line.react span{
-    width: 40%;
+    width: 50%;
 }
 .progress-line span::after{
     position: absolute;
@@ -408,14 +516,23 @@ section{
     height: 170px;
     margin-bottom: 10px;
     position: relative;
+    justify-content: center; /* Centers bars */
+    align-items: center; /* Aligns bars properly */
+    gap: 30px; /* Adds space between bars */
+    padding: 20px; /* Adds padding to avoid edge merging */
 }
 .radial-bars .radial-bar svg{
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
+    
     transform: translate(-50%, -50%) rotate(-90deg);
     width: 120px;
     height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .radial-bars .radial-bar .progress-bar{
     stroke-width: 10;
@@ -493,6 +610,8 @@ section{
 .main-text{
     padding-top: 130px;
     margin-top: 3rem;
+    display: grid;
+    place-items: center;
 }
 .main-text h2{
     font-size: 60px;
@@ -502,14 +621,14 @@ section{
 .main-text h2 span{
     color: #0ef;
 }
-.portfolio-content{
+.portfolio-content {
     display: flex;
-  /*    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;  */
-    grid-template-columns: repeat(auto-fit, minmax(359px,auto));
+    flex-wrap: wrap;
+    justify-content: center; /* Centers items horizontally */
+    gap: 20px; /* Adds space between items */
 }
 .row{
+
     flex: 1 1 30rem;
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
@@ -524,6 +643,7 @@ section{
     width: 100%;
     border-radius: 8px;
     display: flex;
+   
     transition: transform 0.5s;
     /* height: 300px; */
 
@@ -580,6 +700,8 @@ section{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+
+
     gap: 3rem;
     padding-left: 30px;
     margin-top: 4rem;
@@ -748,4 +870,311 @@ section{
         opacity: 1;
     } 
 } 
+@media (max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+    .menu {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/* Ensure navbar hides on desktop */
+@media (min-width: 801px) {
+    .navbar {
+        display: none;
+    }
+}
+@media screen and (max-width: 720px) {
+  
+    .home-content h2 {
+        font-size: 22px;
+    }
+    .home-content h3 {
+        font-size: 22px;
+    }
+    .home-content p {
+        font-size: 16px;
+    }
+    .hm1 img {
+        width: 280px;
+        height:280px;
+        border-radius: 35px;
+    }
+}
+@media (max-width: 480px) {
+    .hm1 img {
+        width: 180px;
+        height: 180px;
+        border-radius: 35px;
+    }
+}
+/* Responsive Styles for Phones (768px and below) */
+@media screen and (max-width: 768px) {
+    #home-scl a {
+        width: 35px;  /* Reduce size */
+        height: 35px;
+        font-size: 18px;  /* Adjust font size */
+        margin: 20px 10px;  /* Adjust spacing */
+    }
+}
+
+/* Extra Small Phones (480px and below) */
+@media screen and (max-width: 480px) {
+    #home-scl a {
+        width: 23px;  /* Further reduce size */
+        height: 23px;
+        font-size: 16px;
+        margin: 13px 6px;  /* Adjust spacing */
+    }
+}
+@media screen and (max-width: 768px) {
+    .about-img1 img {
+        display: none; /* Hides the image */
+    }
+}
+@media screen and (max-width: 768px) {
+    
+    .home {
+        flex-direction: column; /* Stack text and image on smaller screens */
+        text-align: center; /* Center align text */
+    }
+    
+    .home-content, 
+    .hm1 {
+        max-width: 100%; /* Make full width */
+    }
+    
+    .hm1 img {
+        max-width: 350px; /* Reduce image size for smaller screens */
+    }
+
+    .about {
+        flex-direction: column; /* Changes to a single column */
+        margin-left: 50px;
+    }
+    .about-img1 {
+        display: none; /* Hides the container and removes space */
+    }
+}
+@media (max-width: 768px) {
+    .contact {
+        grid-template-columns: 1fr; /* Stack items on small screens */
+        text-align: center;
+    }
+}
+.get-in-touch {
+    font-size: 32px; /* Default size for large screens */
+    font-weight: bold;
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+    .contact-text h2 {
+        font-size: 52px;
+    }
+}
+
+/* Small screens (mobile) */
+@media (max-width: 768px) {
+    .contact-text h2 {
+        font-size: 45px;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+    .contact-text h2 {
+        font-size: 36px;
+    }
+}
+@media (max-width: 992px) {
+    .heading1 {
+        font-size: 28px;
+        text-underline-offset: 8px;
+        text-decoration-thickness: 4px;
+        margin-bottom: 40px;
+    }
+}
+
+/* Small screens (mobile) */
+@media (max-width: 768px) {
+    .heading1 {
+        font-size: 24px;
+        text-underline-offset: 6px;
+        text-decoration-thickness: 3px;
+        margin-bottom: 30px;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+    .heading1 {
+        font-size: 20px;
+        text-underline-offset: 4px;
+        text-decoration-thickness: 2px;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 992px) {
+    .sub-title {
+        font-size: 50px;
+        padding-bottom: 25px;
+    }
+}
+
+/* Small screens (mobile) */
+@media (max-width: 768px) {
+    .sub-title {
+        font-size: 40px;
+        padding-bottom: 20px;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+    .sub-title {
+        font-size: 30px;
+        padding-bottom: 15px;
+    }
+}
+@media (max-width: 768px) {
+    .radial-bar {
+        width: calc(50% - 20px); /* Two per row, with less spacing */
+        max-width: 140px;
+        height: 140px;
+    }
+
+    .radial-bars .radial-bar svg {
+        width: 100px;
+        height: 130px;
+    }
+}
+
+/* Extra Small Screens (Still keeping 2 per row) */
+@media (max-width: 480px) {
+    .radial-bar {
+        width: calc(50% - 10px); /* Keeping 2 per row, even on smaller screens */
+        max-width: 120px;
+        height: 120px;
+    }
+
+    .radial-bars .radial-bar svg {
+        width: 90px;
+        height: 110px;
+    }
+}
+@media (max-width: 768px) {
+    .about-text .fsd {
+       font-size: 30px; /* Smaller text on tablets */
+    }
+ }
  
+ /* Further reduce font size on phones */
+ @media (max-width: 480px) {
+    .about-text .fsd {
+       font-size: 24px; /* Even smaller on mobile */
+    }
+ }
+ @media (max-width: 768px) {
+    .about-text p {
+        font-size: 18px; /* Slightly smaller on tablets */
+        line-height: 1.5;
+    }
+}
+    @media (min-width: 768px) {
+        .about-text p {
+            margin-left: 20px;
+          
+        }
+}
+
+/* Small screens (Mobile) */
+@media (max-width: 480px) {
+    .about-text p {
+        font-size: 16px; /* Smaller text on mobile */
+        line-height: 1.4;
+    }
+}
+@media (max-width: 768px) {
+    .btn-box {
+        padding: 8px 16px;
+        font-size: 12px;
+        border-radius: 25px;
+        box-shadow: 0 0 2px #0ef, 0 0 10px #0ef;
+    }
+}
+@media (max-width: 1024px) {
+    .main-text h2 {
+        font-size: 48px;
+    }
+}
+
+/* Small screens (Mobile) */
+@media (max-width: 768px) {
+    .main-text h2 {
+        font-size: 36px;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+    .main-text h2 {
+        font-size: 28px;
+    }
+}
+
+/*  */
+ 
+ /* */ 
+ /*  */
+ /*  */
+ /*  */
+ /*  */
+
+/* @media (max-width: 520px) {
+    .text-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+ 
+    .text-content h3:first-of-type,  
+    .text-content h2,  
+    .text-content h3:nth-of-type(2) {  
+        display: block;  
+        font-size: 18px;  
+        white-space: nowrap; 
+        margin: 5px 0; 
+        visibility: visible;
+    }
+} */
+@media (max-width: 510px) {
+    .home-content {
+        flex-direction:column; /* Image first, then text */
+        align-items: center; /* Center everything */
+        text-align: center; /* Center text for better appearance */
+    }
+
+    .text-content {
+        max-width: 100%; /* Full width for small screens */
+    }
+
+    .hm1 {
+        margin-top: 10px;
+        margin-left: 0; /* Remove left margin */
+        margin-bottom: 20px; /* Add space between image and text */
+    }
+
+    .hm1 img {
+        width: 230px; /* Reduce image size for smaller screens */
+        height: 230px;
+    }
+}
+
+
+
